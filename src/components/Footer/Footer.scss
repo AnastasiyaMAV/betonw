@@ -1,0 +1,60 @@
+@import "../../assets/styles/main.scss";
+
+.footer {
+  background-color: $yellow;
+  border-radius: 20px 20px 0px 0px;
+  margin-top: 74px;
+  flex: 0 0 auto;
+
+  p {
+    margin: 0;
+  }
+
+  &__container {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-evenly;
+    color: $main;
+
+  
+    @media (min-width: 320px) and (max-width: 850px) {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  &__logo-wrap {
+    display: flex;
+  }
+
+  &__logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: $main;
+  }
+
+  &__name {
+    @include logo;
+    margin: 0;
+    color: $main;
+  }
+
+  &__address {
+    @include mainText;
+  }
+  
+  &__tel, &__mail {
+    & a:first-child {
+      @include mainText;
+      color: $main;
+    }
+  }
+
+  &__messengers {
+    display: flex;
+    gap: 20px;
+  }
+
+}

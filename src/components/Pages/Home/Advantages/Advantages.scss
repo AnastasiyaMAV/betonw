@@ -1,0 +1,63 @@
+@import '../../../../assets/styles/main.scss';
+
+.advantages {
+  margin-top: 74px;
+
+  @media (max-width: 1024px) {
+    margin-top: 50px;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 35px;
+  }
+
+  @media (max-width: 480px) {
+    margin-top: 20px;
+  }
+
+  &__title {
+    @include title;
+    text-align: center;
+  }
+
+  &__list {
+    margin: 30px 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    list-style-type: none;
+  }
+
+  &__item {
+    padding: 15px;
+    max-width: 200px;
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    color: $main;
+    background-color: $grayblue;
+    box-sizing: border-box;
+
+    @media (max-width: 768px) {
+      max-width: 150px;
+      height: 150px;
+    }
+  }
+
+  &__item-num {
+    @include head;
+    width: 100%;
+    display: inline-block;
+    color: $white;
+    text-align: end;
+  }
+
+  &__item-text {
+    @include mainText;
+    margin: 15px auto 0;
+    text-align: center;
+  }
+}

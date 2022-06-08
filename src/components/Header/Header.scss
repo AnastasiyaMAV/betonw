@@ -1,0 +1,273 @@
+@import '../../assets/styles/main.scss';
+
+.header {
+  background-color: $yellow;
+  border-radius: 0px 0px 20px 20px;
+  flex: 0 0 auto;
+
+  &__container {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo-wrap {
+    display: flex;
+  }
+
+  &__logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: $main;
+  }
+
+  &__name {
+    @include logo;
+    margin: 0;
+    color: $main;
+  }
+
+  &__nav {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__nav-items {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__nav-item {
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__navlink {
+    @include mainText;
+    padding: 5px 15px;
+    color: $main;
+
+    border-radius: 25px;
+    text-decoration: none;
+    transition: $transition;
+
+    &_active {
+      text-decoration: underline;
+    }
+
+    &:hover {
+      background-color: $white;
+      text-decoration: none;
+    }
+  }
+
+  &__btn {
+    max-width: 200px;
+    width: 100%;
+    display: flex;
+    align-self: center;
+    border: 2px solid;
+    border-radius: 0.6em;
+    background-position: 100%;
+    background-size: 400%;
+    appearance: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: $transition;
+
+    color: $main;
+    border-color: $main;
+    background-color: $white;
+    background-image: linear-gradient(45deg, $yellow 50%, transparent 50%);
+
+    &:hover,
+    &:focus {
+      color: $white;
+      outline: 0;
+    }
+
+    &:hover {
+      background-position: 0;
+    }
+
+    &>a {
+      @include mainText;
+
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 2px;
+      color: $main;
+      text-decoration: none;
+      padding: 3px 5px;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .header {}
+}
+
+@media (max-width: 1280px) {
+  .header {}
+}
+
+@media (max-width: 768px) {
+  .header {
+    &__container {
+      padding: 15px 20px;
+    }
+
+    &__logo {
+      width: 20px;
+      height: 20px;
+    }
+
+    &__navlink {
+      padding: 5px 10px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    &__logo {
+      width: 18px;
+      height: 18px;
+    }
+
+    &__navlink {
+      padding: 5px;
+    }
+  }
+}
+
+.hamburger-menu {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+/* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 12px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+  right: 50px;
+
+  &::after {
+    content: "";
+    position: relative;
+    right: 10px;
+    max-width: 80px;
+    width: 100%;
+    padding: 23px;
+    background-color: $yellow;
+    border-radius: 50%;
+    z-index: -1;
+  }
+}
+
+/* добавляем "гамбургер" */
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: $main;
+}
+
+.menu__btn>span::before {
+  content: '';
+  top: -8px;
+}
+
+.menu__btn>span::after {
+  content: '';
+  top: 8px;
+}
+
+/* контейнер меню */
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: $white;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+
+  &_active {
+    visibility: visible;
+  }
+}
+
+/* элементы меню */
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: $main;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+
+  &_active {
+    text-decoration: underline;
+  }
+}
+
+.menu__item:hover {
+  background-color: $yellow;
+}
+
+#menu__toggle:checked~.menu__btn>span {
+  transform: rotate(45deg);
+}
+
+#menu__toggle:checked~.menu__btn>span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#menu__toggle:checked~.menu__btn>span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+/*
+#menu__toggle:checked~.menu__box {
+  visibility: visible;
+}
+*/

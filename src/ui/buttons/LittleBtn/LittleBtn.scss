@@ -1,0 +1,38 @@
+@import '../../../assets/styles/main.scss';
+
+.littleBtn {
+  max-width: 200px;
+  width: 100%;
+  display: flex;
+  align-self: center;
+  border: 2px solid;
+  border-radius: 0.6em;
+  background-position: 100%;
+  background-size: 400%;
+  appearance: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: $transition;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    outline: 0;
+  }
+
+  &:hover {
+    background-position: 0;
+  }
+
+  &>a {
+    @include mainText;
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2px;
+    text-decoration: none;
+    padding: 3px 5px;
+  }
+}

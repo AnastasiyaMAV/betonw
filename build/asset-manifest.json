@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.de356dbe.css",
+    "main.js": "/static/js/main.3c1fe2b2.js",
+    "static/media/photo3.jpg": "/static/media/photo3.6dc65da748e7f158e168.jpg",
+    "static/media/photo1.jpg": "/static/media/photo1.9bdb7761abb4d9c256bb.jpg",
+    "static/media/photo2.jpg": "/static/media/photo2.f253070b8c0158ede37c.jpg",
+    "static/media/photo4.jpg": "/static/media/photo4.7292f69c293a1d2cc28e.jpg",
+    "static/media/photo6.png": "/static/media/photo6.94158f5a343647f900e5.png",
+    "static/media/Rectangle.png": "/static/media/Rectangle.aeca836aaa1b395a59d9.png",
+    "static/media/city.png": "/static/media/city.610c25fbf612b618e00b.png",
+    "static/media/icon-whatsapp.png": "/static/media/icon-whatsapp.5fc400c4b153fc178ad7.png",
+    "static/media/icon-telegram.png": "/static/media/icon-telegram.e9722f26cc228e817986.png",
+    "index.html": "/index.html",
+    "main.de356dbe.css.map": "/static/css/main.de356dbe.css.map",
+    "main.3c1fe2b2.js.map": "/static/js/main.3c1fe2b2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de356dbe.css",
+    "static/js/main.3c1fe2b2.js"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "short_name": "beton-w",
+  "name": "beton-w",
+  "icons": [
+    {
+      "src": "concreteMixer.concreteMixer",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "concreteMixer.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "concreteMixer.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

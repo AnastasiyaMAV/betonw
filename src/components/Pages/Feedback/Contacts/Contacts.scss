@@ -1,0 +1,62 @@
+@import "../../../../assets/styles/main.scss";
+
+.container-contacts {
+  width: 100%;
+  max-width: 1280px;
+  margin-top: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  @media (max-width: 1024px) {
+    margin-top: 50px;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 35px;
+  }
+
+  @media (max-width: 480px) {
+    margin-top: 20px;
+  }
+
+  & > article:first-child {
+    padding: 30px;
+
+    & > h1:first-child {
+      @include title;
+    }
+  }
+  
+  &__subtitle {
+    @include subtitle;
+  }
+
+  &__subtitle-messengers {
+    display: flex;
+    gap: 30px;
+
+    @media (max-width: 435px){
+      margin-top: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__subtitle-telAndEmail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    @media (max-width: 435px){
+      flex-direction: column;
+    }
+  }
+
+  &__subtitle-telegram, &__subtitle-whatsapp {
+    width: 24px;
+    height: 24px;
+  }
+}

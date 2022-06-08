@@ -1,0 +1,72 @@
+@import '../../../../assets/styles/main.scss';
+
+.intro {
+  margin-top: 74px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background-color: $grayblue;
+  overflow: hidden;
+
+  @media (max-width: 1024px) {
+    margin-top: 50px;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 35px;
+  }
+
+  @media (max-width: 480px) {
+    margin-top: 20px;
+  }
+
+  &__title {
+    @include head;
+    margin: 0 0 20px;
+    text-align: center;
+    color: $main;
+  }
+
+  &__image {
+    margin-top: 35px;
+    object-fit: cover;
+
+    &_city {
+      max-width: 1040px;
+
+      @media (max-width: 1280px) {
+        max-width: 900px;
+      }
+
+      @media (max-width: 1024px) {
+        max-width: 800px;
+      }
+
+      @media (max-width: 768px) {
+        max-width: 500px;
+      }
+
+      @media (max-width: 480px) {
+        max-width: 400px;
+      }
+    }
+
+    &_cars {
+      max-width: 800px;
+
+      @media (max-width: 1024px) {
+        max-width: 600px;
+      }
+
+      @media (max-width: 768px) {
+        max-width: 400px;
+      }
+
+      @media (max-width: 480px) {
+        max-width: 300px;
+      }
+    }
+  }
+}

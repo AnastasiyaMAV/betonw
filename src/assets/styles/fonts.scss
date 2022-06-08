@@ -1,0 +1,77 @@
+@mixin head {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 64px;
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
+
+@mixin title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+@mixin subtitle {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+@mixin logo {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@mixin mainText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@mixin listMainText {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+@mixin smallBtnText {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+@mixin caption {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
