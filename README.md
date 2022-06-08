@@ -15,7 +15,7 @@
 
 ---
 
-![GitHub commit activity](https://img.shields.io/github/commit-activity/y/AnastasiyaMAV/betonw?color=%23ffcc00) ![GitHub top language](https://img.shields.io/github/languages/top/AnastasiyaMAV/betonw?color=%23ffcc00) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/AnastasiyaMAV/betonw?color=%23ffcc00) ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/AnastasiyaMAV/betonw) ![GitHub last commit](https://img.shields.io/github/last-commit/AnastasiyaMAV/betonw?color=%23ffcc00) ![GitHub language count](https://img.shields.io/github/languages/count/AnastasiyaMAV/betonw?color=%23ffcc00)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/y/AnastasiyaMAV/betonw?color=%23ffcc00) ![GitHub top language](https://img.shields.io/github/languages/top/AnastasiyaMAV/betonw?color=%23ffcc00) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/AnastasiyaMAV/betonw?color=%23ffcc00) ![GitHub last commit](https://img.shields.io/github/last-commit/AnastasiyaMAV/betonw?color=%23ffcc00) ![GitHub language count](https://img.shields.io/github/languages/count/AnastasiyaMAV/betonw?color=%23ffcc00)
 
 ---
 
@@ -28,7 +28,6 @@
 - [React](https://ru.reactjs.org/)
 - [React Hooks](https://ru.reactjs.org/docs/hooks-intro.html)
 - [React Router](https://v5.reactrouter.com/web/guides/quick-start)
-- [MobX](https://mobx.js.org/getting-started)
 - [SASS](https://sass-lang.com/)
 
 #### Запуск приложения:
